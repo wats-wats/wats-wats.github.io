@@ -57,7 +57,7 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2F0cyIsImEiOiJlR242SzFFIn0.aKgDWWxO1FKbMGgnhF71pQ';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/wats/ciwcbxqc0000j2pp77a29shkn',
+    style: 'mapbox://styles/wats/ciwclyucg00622pw1bs41asd6',
     center: [-74.036, 40.701], 
     minZoom: 10,
     maxZoom: 16,
@@ -69,9 +69,9 @@ var sliderValue = document.getElementById('slider-value');
 map.on('load', function() {
 
     // Add source/layers
-    map.addSource('Bright-NYC', {
+    map.addSource('NY City - Georef', {
         "type": "raster",
-        "url": "mapbox://styles/wats/ciwcbxqc0000j2pp77a29shkn"
+        "url": "mapbox://styles/wats/ciwclyucg00622pw1bs41asd6"
     });
 
     map.addLayer({
