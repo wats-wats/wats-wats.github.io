@@ -50,9 +50,9 @@
 
 <div id="map"></div>
 
-<div class="map-overlay top">
-    <div class="map-overlay-inner">
-        <label>Layer opacity: <span id="slider-value">100%</span></label> 
+<div class='map-overlay top'>
+    <div class='map-overlay-inner'>
+        <label>Layer opacity: <span id='slider-value'>100%</span></label> 
         <input id='slider' type='range' min='0' max='100' step='0' value='100' />
     </div>
 </div>
@@ -70,6 +70,7 @@ var map = new mapboxgl.Map({
 });
 var slider = document.getElementById('slider');
 var sliderValue = document.getElementById('slider-value');
+    
 map.on('load', function() {
 
     // Add source/layers
