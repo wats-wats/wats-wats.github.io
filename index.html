@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-    <html> 
-    <head>
+<html> 
+<head>
     <meta charset='utf-8' />
     <title>NYC 1890</title>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
@@ -23,20 +23,19 @@
     padding: 8px;
 }
 
-.map-overlay map-overlay-inner {
+.map-overlay .map-overlay-inner {
     background-color: #fff;
     box-shadow:0 1px 2px rgba(0, 0, 0, 0.20);
     border-radius: 2px;
     padding:10px;
     margin-bottom: 10px;
-
 }
 
 .map-overlay label {
     display: block;
     margin: 0 0 10px;
-
 }
+    
 .map-overlay input {
     background-color: transparent;
     display: inline-block;
@@ -44,8 +43,7 @@
     position: relative;
     margin: 0;
     cursor: ew-resize;
-}
-    
+}   
 </style>
 
 <div id="map"></div>
@@ -65,9 +63,9 @@ var map = new mapboxgl.Map({
     center: [-73.997, 40.730], 
     minZoom: 11,
     maxZoom: 16,
-    zoom: 11 
-
+    zoom: 11
 });
+    
 var slider = document.getElementById('slider');
 var sliderValue = document.getElementById('slider-value');
     
@@ -93,8 +91,8 @@ map.on('load', function() {
 
         // Value indicator
         sliderValue.textContent = e.target.value + '%';
-
  });
+    
     map.addControl(new mapboxgl.NavigationControl());
 
 });
